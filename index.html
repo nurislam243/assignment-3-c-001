@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- daisy UI + tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .adlam-display-font{
+       font-family: "ADLaM Display", serif;
+     }
+     .sora-font{
+      font-family: "Sora", serif;
+     }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'btn-color': '#FFDC26',
+              'light-black': '#111111',
+              'primary-bg': '#F9DF8A',
+              'second-bg': '#FFF9F4'
+            }
+          }
+        }
+      }
+    </script>
 </head>
-<body>
-    
+<body class="sora-font">
+    <!-- header section start here -->
+    <header class="">
+        <!-- navbar start -->
+        <nav class="bg-second-bg">
+          <div class="navbar md:container mx-auto">
+            <div class="navbar-start px-2">
+              <img src="./images/logo-header.png" alt="">
+              <a class="text-light-black hidden ml-3 md:flex text-[26px]">Browse<span class="text-btn-color font-medium">4</span> Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-light-black">
+              <ul class="menu menu-horizontal px-1 hidden lg:flex text-lg">
+                <li class="mr-3"><a href="#">Find a pet</a></li>
+                <li class="mr-3"><a href="#">Breeds</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-1 justify-end px-2">
+              <div class="flex items-stretch">
+                <a class="btn btn-ghost hidden lg:flex rounded-btn border-btn-color mr-4 text-light-black text-lg">Login</a>
+                <a class="btn btn-ghost hidden lg:flex rounded-btn bg-btn-color text-light-black text-lg">Subscribe</a>
+                <div class="dropdown dropdown-end">
+                  <div tabindex="0" role="button" class="lg:hidden">
+                    <div class="">
+                      <div class="w-8 h-2 bg-black mb-1"></div>
+                      <div class="w-8 h-2 bg-black mb-1"></div>
+                      <div class="w-8 h-2 bg-black mb-1"></div>
+                    </div>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <div class="md:container mx-auto bg-[url('/images/cat-big.png')] bg-no-repeat bg-cover bg-center mt-16 pt-6 space-y-5 lg:h-[700px] px-3 md:px-0">
+          <h1 class="text-light-black adlam-display-font text-[56px] leading-snug">
+            Pamper Your Pet, <br> Because They Deserve <br> the Bes
+          </h1>
+          <p class="">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="btn bg-btn-color">Find a pet</button>
+        </div>
+    </header>
 </body>
 </html>
