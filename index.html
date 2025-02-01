@@ -20,6 +20,18 @@
      .sora-font{
       font-family: "Sora", serif;
      }
+    @keyframes bounceSlow {
+    0%, 100% {
+      transform: translateY(40px);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    }
+    .animate-bounce-slow {
+      animation: bounceSlow 2s infinite ease-in-out;
+    }
+
     </style>
     <script>
       tailwind.config = {
@@ -86,6 +98,11 @@
           </h1>
           <p class="">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
           <button class="btn bg-btn-color">Find a pet</button>
+          <div class="relative bg-transparent py-16 px-6 text-center">
+            <!-- Animated Pet Image -->
+            <img src="images/fish-cartoon.png" alt="Cute Pet" 
+              class="mx-auto w-24 h-24 rounded-full object-cover animate-bounce-slow">
+          </div>
         </div>
     </header>
     <main class="mt-14 lg:mt-32">
@@ -209,11 +226,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 2 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/fish-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -222,11 +239,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 3 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/bird-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -235,11 +252,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 4 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/rabbit-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -248,11 +265,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 5 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/bird-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -261,11 +278,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 6 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/pet-couch.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -274,11 +291,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 7 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/fish-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -287,11 +304,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 8 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/pet-couch.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
@@ -300,11 +317,11 @@
                     <p class="text-light-black text-base">$39.99</p>
                   </div>
                 </div>
-                <!--small card 1 -->
+                <!--small card 9 -->
                 <div class="flex pl-1 rounded-[10px] py-3 gap-x-[7px] md:gap-x-[14px] items-center justify-center bg-white border border-[#E7E7E7] w-full">
                   <div class="w-5/12 rounded-lg bg-second-bg mr-2 md:mr-3 max-w-20 h-20 flex justify-center items-center">
                     <div class="flex w-full justify-center items-center bg-second-bg rounded-lg">
-                      <img class="" src="./images/dog-cartoon.png" />
+                      <img class="" src="./images/rabbit-cartoon.png" />
                     </div>
                   </div>
                   <div class="w-7/12 space-y-1">
